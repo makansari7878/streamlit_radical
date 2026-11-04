@@ -13,7 +13,7 @@ st.markdown("---")
 st.header("The Agents at Work:")
 
 
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY") or os.environ.get("GROQ_API_KEY", "")
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 llm = ChatGroq(
     groq_api_key=GROQ_API_KEY,
